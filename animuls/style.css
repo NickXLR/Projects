@@ -1,0 +1,13 @@
+head, body, html{
+    height: 100%;
+    width: 100%;
+    border: solid black 2px;
+}
+
+
+img{
+    position: relative;
+    width: 10%;
+    height: auto;
+
+}
