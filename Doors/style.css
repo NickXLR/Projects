@@ -12,7 +12,6 @@ head, body, html{
 
 
 img{
-    display: flex;
     position: relative;
     width: 10%;
     height: auto;
