@@ -1,3 +1,9 @@
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 head, body, html{
     height: 100%;
     width: 100%;
@@ -6,6 +12,7 @@ head, body, html{
 
 
 img{
+    display: flex;
     position: relative;
     width: 10%;
     height: auto;
