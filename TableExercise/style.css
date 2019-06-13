@@ -1,0 +1,29 @@
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    }
+
+tr{
+    height: 18vh;
+}
+
+th{
+    width: 20vw;
+    color: rebeccapurple;
+}
+
+table tr:nth-child(even) {
+    background-color: gray;
+    }
+
+table tr:nth-child(odd) {
+    background-color: magenta;
+    }
+
+img{
+    height: 300px;
+}
+
+tr th:nth-child(3){
+    width: 80vw;
+}
