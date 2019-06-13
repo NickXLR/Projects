@@ -1,7 +1,17 @@
+body{
+    text-align: center;
+    background-color: black;
+
+}
 img{
-    position: relative;
-    height: 50%;
+    padding-left: auto;
+    height: 70vh;
     width: auto;
     margin-left: auto;
     margin-top: 2%;
+    position: static;
+}
+
+h1{
+    color: white;
 }
