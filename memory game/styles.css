@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+*{
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+}
+.main{
+	border:aqua dashed 2px;
+	padding: 25px;
+	height: 98vh;
+	flex-basis: 100%;
+	max-width: 50rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.title {
+	font-family: 'Amatic SC', cursive;
+	font-size: 4rem;
+	font-weight: 700;
+	color: #22a1ff;
+	text-align: center;
+}
+.cards-box{
+	width: 100%;
+	flex-grow:1;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 20px;
+}
+.card{
+	border : #4b4b4b 2px solid;
+	flex-grow:1;
+	margin: 20px;
+}
+.marked-card{
+	border:red 5px solid;
+}
+.unmarked-card{
+    border:#4b4b4b 1px solid;
+}
+.picker{
+
+	width: 100%;
+	flex-grow:1;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.picker-box{
+	border: #4b4b4b 1px solid;
+	margin: 5px;
+	flex-grow:1;
+	flex-basis: 165px;
+	cursor: pointer;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>color picker</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="main">
+            <ul class="colors-box">
+                <li class="color color1"></li>
+                <li class="color color2"></li>
+                <li class="color color3"></li>
+                <li class="color color4"></li>
+                <li class="color color5"></li>
+                <li class="color color6"></li>
+            </ul>
+            <div class="selected_color"></div>
+        </div>
+        <script>
+            var $  = function(selector){ return document.querySelector(selector) }
+            var $$ = function(selector){ return document.querySelectorAll(selector) }
+
+            //reference ui elements
+            var colors_box        = $('.colors-box');
+            var selected_color    = $('.selected_color');
+            
+            //add more colors dynamically
+            var more_colors = ['#071325','#364654','#6F7D8C','#4B5056','#1E3648'];            
+
+            for(var color of more_colors){
+
+                var li = document.createElement('li');
+
+                // li.className = 'color';
+                li.classList.add('color');
+
+                li.style.backgroundColor = color;
+
+                colors_box.appendChild(li);
+            }
+                
+            colors_box.addEventListener('click',function(e){
+                selected_color.style.backgroundColor = window.getComputedStyle(e.target).backgroundColor;
+            })
+
+        </script>
+        <style>body,html{height: 100%;}
+            .main{
+                      height: 100%;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                }
+     
+     
+            .colors-box {
+                display: flex;
+                /* flex-direction: column; */
+                flex-wrap: wrap;
+                border: 5px palevioletred solid;
+                list-style-type: none;
+                list-style-position: unset;}
+     
+     
+            .color {
+              /* flex: 1 1 150px; */
+              min-height: 150px;
+              cursor: pointer;
+              flex-grow: 1;
+              border: 1px black solid;
+              list-style-type: none;
+              list-style-position: unset;
+              }
+     
+            .color1 {
+                background: deeppink;}
+            .color2 {
+                background: blueviolet;}
+            .color3 {
+                background: orangered;}
+            .color4 {
+                background: lawngreen;}
+            .color5 {
+                background: deepskyblue;}
+            .color6 {
+                background: turquoise;}
+     
+            .selected_color {
+                border: 5px palevioletred solid;
+                background: lightgray;
+                flex: 1 1 200px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                font-size:40px;
+                font-family:Roboto;
+                font-weight:100;
+                color:white;
+                  }
+            </style>
+    </body>
+</html>
