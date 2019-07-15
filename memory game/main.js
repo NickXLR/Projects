@@ -72,6 +72,7 @@ function color_cards(){
 	}
 }
 
+
 function hide_cards(){
 	for(var i = 0 ; i < num_cards ; i++){
 		var current_card = $(".card" + i);
@@ -80,7 +81,7 @@ function hide_cards(){
 }
 
 function add_event_listener(){
-	
+
 }
 
 function mark_card(card){
