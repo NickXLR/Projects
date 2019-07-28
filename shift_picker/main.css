@@ -1,0 +1,53 @@
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    border: 3px solid yellow;
+}
+
+body .container {
+    background-color: #33495e;
+}
+
+.container{
+    height: 100vh;
+    border: solid 2px #979a9a;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.label_name .label_position{
+    font-size: 40px;
+
+}
+
+input{
+    background-color: #839192;
+    height: 3vh;
+    width: 15vw;
+}
+
+.submit{
+    background-color: #2571a3;
+    width: 20vw;
+    height: 10vh;
+    margin-top: 5%;
+    color: #76438a;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-text{
+    width: 20vw;
+    height: 10vh;
+    color: #76438a;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* border: 3px solid red; */
+}

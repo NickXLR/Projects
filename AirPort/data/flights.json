@@ -1,0 +1,39 @@
+{
+    "flights": [
+        {
+            "number":"216",
+            "origin":"TLV",
+            "destination":"BER"
+        },
+        {
+            "number":"644",
+            "origin":"LGW",
+            "destination":"LAX"
+        },
+        {
+            "number":"362",
+            "origin":"LGW",
+            "destination":"TLV"
+        },
+        {
+            "number":"423",
+            "origin":"PEK",
+            "destination":"DXB"
+        },
+        {
+            "number":"883",
+            "origin":"BER",
+            "destination":"TLV"
+        },
+        {
+            "number":"987",
+            "origin":"PEK",
+            "destination":"LGW"
+        },
+        {
+            "number":"172",
+            "origin":"LGW",
+            "destination":"TLV"
+        }
+    ]
+}
